@@ -63,3 +63,9 @@ function Desencriptar(stringDesencriptada) {
   }
   return stringDesencriptada;
 }
+function copy() {
+  var contenido = document.querySelector(".mensaje");
+  navigator.clipboard.writeText(contenido.value);
+  alert("Copiado!");
+  document.getElementById("inputTexto").value = "";
+}
